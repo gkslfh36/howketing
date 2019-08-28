@@ -2,5 +2,8 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
-//Import
-@import "base", "mixin", "typography", "layout", "syntax.scss", "custom.scss";
+//Import "base", "mixin", "typography", "layout", "syntax.scss", "custom.scss";
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans|Noto+Sans+KR&display=swap');
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+}
