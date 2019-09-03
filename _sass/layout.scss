@@ -37,11 +37,11 @@ html, body {
 /* Toggle class to open menu */
 
 #nav.menu-open {
-  @include open(-5rem);
+  @include open(-12rem);
 }
 
 #nav-left.menu-open-left {
-  @include open(5rem);
+  @include open(12rem);
 }
 
 /* Separator after menu */
@@ -170,7 +170,7 @@ html, body {
     content: '';
     width: 5rem;
     height: 1px;
-    margin: 23px auto;
+    margin: 50px auto;
     background-color: lighten($text-color, 70%);
   }
 
@@ -193,7 +193,7 @@ img {
   max-width: 100%;
   display: block;
   margin: 0 auto;
-  margin-bottom: 24px;
+  margin-bottom: 5px;
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
       -ms-border-radius: 4px;
@@ -266,7 +266,7 @@ footer {
 }
 
 .footer {
-	padding: 1.6px 0;
+	padding: 2px 0;
 	background-color: #616060;
 	color: $background-color;
 	text-align: center;
