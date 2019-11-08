@@ -109,7 +109,11 @@
   'https://connect.facebook.net/en_US/fbevents.js');
   fbq('init', '2667689679974006');
 	fbq('track', 'ViewContent', {
-		content_title: 'page.title'
+		contents: [
+      {
+        title: '염탐만이 살길',
+      }],
+    content_type: 'post'
 	});
 </script>
 <noscript><img height="1" width="1" style="display:none"
