@@ -3,8 +3,8 @@
 	dataLayer = [];
 		dataLayer.push ({
 		  'event' : 'ViewContent'
-		  'title' : '{{ page.title }}'
-		  'content_id' : '{{ page.content_id }}'
+		  'title' : '{% if page.title %}'
+		  'content_id' : '{% page.content_id %}'
 		});
 	</script>
 	<!-- Google Tag Manager -->
