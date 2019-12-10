@@ -1,6 +1,13 @@
 ---
 layout: default
 ---
+<script>
+ dataLayer.push ({
+		'event' : 'ViewContent'
+		'title' : '{{page.title}}'
+		'content_id' : '{{page.content_id}}'
+	});
+</script>
 <article id="post-page">
 	{% if page.image.feature %}
   <img src="{{ site.github.url }}/img/sum/{{ page.image.feature }}">
