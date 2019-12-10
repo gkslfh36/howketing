@@ -1,10 +1,10 @@
 <head>
 	<script>
-	dataLayer = [];
+  window.dataLayer = window.dataLayer || [];
 		dataLayer.push ({
 		  'event' : 'ViewContent'
-		  'title' : '{% if page.title %}'
-		  'content_id' : '{% page.content_id %}'
+		  'title' : '{{page.title}}'
+		  'content_id' : '{{page.content_id}}'
 		});
 	</script>
 	<!-- Google Tag Manager -->
