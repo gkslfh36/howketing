@@ -2,11 +2,12 @@
 layout: default
 ---
 <script>
-  function gtag() {
-      dataLayer.push(ViewContent);
+  dataLayer.push({
+    'ViewContent' : {
+    'content_id' : '{{ post.content_id }}',
+    'content_title' : '{{ post.title }}'
     }
-  gtag('content_title','{{page.title}}');
-  gtag('content_id', '{{page.content_id}}');
+  });
 </script>
 
 <article id="post-page">
