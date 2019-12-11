@@ -2,11 +2,13 @@
 layout: default
 ---
 <script>
+function(page){
  dataLayer.push ({
 		'event' : 'ViewContent'
 		'content_title' : '{{page.title}}'
 		'content_id' : '{{page.content_id}}'
 	});
+}
 </script>
 <article id="post-page">
 	{% if page.image.feature %}
