@@ -2,12 +2,11 @@
 layout: default
 ---
 <script>
-  dataLayer.push({
-    'ViewContent' : {
-    'content_id' : '{{ page.content_id }}',
-    'content_title' : '{{ page.title }}'
-    }
-  });
+ dataLayer.push({
+   'event' : 'ViewContent'
+   'content_id' : '{{ page.content_id }}',
+   'content_title' : '{{ page.title }}'
+ })
 </script>
 
 <article id="post-page">
